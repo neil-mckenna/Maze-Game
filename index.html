@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Maze</title>
+        <script src="matter.min.js" type="text/javascript"></script>
+        <style>
+
+            body {
+                margin: 0;
+            }
+            .hidden{
+                display: none !important;
+            }
+
+            h1 {
+                background-color: transparent;
+                color: white;
+                font-size: 64px;
+            }
+
+            .winner {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: absolute;
+                z-index: 1;
+                height: 100vh;
+                width: 100vw;
+                padding: 100px 0;
+            }
+            button {
+                background-color: green;
+                color: white;
+                font-size: 64px;
+                border-style: 1px aolid green;
+                padding: 0.25em;
+                border-radius: 15px;
+
+            }
+
+        </style>
+    </head>
+    <body>
+
+        <div class="winner hidden">
+            <h1>You Win! <button id="retry" type="button">Retry!</button></h1>
+            <br>
+
+
+
+        </div>
+
+        <script src="index.js" type="text/javascript"></script>
+    </body>
+</html>
